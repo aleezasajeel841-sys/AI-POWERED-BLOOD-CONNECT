@@ -1,0 +1,1 @@
+{"name":"ai-powered-blood-connect","version":"0.1.0","private":true,"workspaces":["server","client"],"scripts":{"install-all":"pnpm -w install","start":"node server/index.js","dev":"concurrently \"pnpm --filter server dev\" \"pnpm --filter client dev\""},"devDependencies":{"concurrently":"^8.0.0","pnpm":"^8.0.0"}}

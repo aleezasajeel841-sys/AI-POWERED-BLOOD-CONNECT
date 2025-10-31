@@ -1,0 +1,1 @@
+const express=require('express');const router=express.Router();router.post('/send',(req,res)=>res.status(501).json({msg:'send notification - not implemented'}));module.exports=router;
