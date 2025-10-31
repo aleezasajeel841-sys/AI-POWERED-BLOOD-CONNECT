@@ -1,5 +1,9 @@
+// server/routes/auth.js
 const express = require('express');
 const router = express.Router();
-router.post('/signup', (req, res) => res.status(501).json({ msg: 'not implemented' }));
-router.post('/login', (req, res) => res.status(501).json({ msg: 'not implemented' }));
+const { signup, login } = require('../controllers/authController');
+
+router.post('/signup', signup);
+router.post('/login', login);
+
 module.exports = router;
